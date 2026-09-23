@@ -1,0 +1,7 @@
+1. Upload all files to public_html on cPanel.
+2. Keep video/video1.mp4 ... video/video6.mp4 for the portrait video gallery.
+3. Verify the embedded Google Maps appears on the Contact/Footer area.
+4. Add/verify Maison Sultana in Google Business Profile using the real business name.
+5. Add the website URL to Google Business Profile.
+6. In Google Search Console, verify the domain and submit sitemap.xml.
+7. Inspect https://sultana.ma/ and https://sultana.ma/produit.html and request indexing.

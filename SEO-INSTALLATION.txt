@@ -1,0 +1,10 @@
+SEO MAISON SULTANA — INSTALLATION
+
+1. Uploadez tout le contenu du ZIP dans public_html de sultana.ma.
+2. Vérifiez : /, /produit.html, /robots.txt, /sitemap.xml, /site.webmanifest.
+3. Dans Google Search Console, ajoutez sultana.ma et envoyez /sitemap.xml.
+4. Utilisez Inspection de l’URL pour demander l’exploration des pages.
+5. Dans Google Business Profile, utilisez le nom réel « Maison Sultana ». La description et les données de ce ZIP sont préparées pour l’activité producteur/distributeur de gâteaux marocains traditionnels et de prestige.
+6. Les données structurées LocalBusiness/Bakery sont intégrées au site afin d’aider Google à comprendre l’établissement. Elles ne garantissent pas une position précise dans les résultats.
+7. Remplacez les images placeholder du dossier images/ par les vraies images Sultana et conservez les noms de fichiers indiqués.
+8. Si le domaine final n’est pas https://sultana.ma/, remplacez le domaine dans canonical, Open Graph, JSON-LD, robots.txt et sitemap.xml.

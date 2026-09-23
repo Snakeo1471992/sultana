@@ -1,0 +1,2 @@
+Hero background image installed: images/hero-background.png
+The hero section now uses the supplied Moroccan luxury image as a full-width background with a soft dark overlay for readability.

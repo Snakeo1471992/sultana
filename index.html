@@ -3,37 +3,218 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Sultana — Tradition Marocaine, pâtisseries marocaines authentiques.">
-<title>Sultana — Tradition Marocaine</title>
+<meta name="description" content="Maison Sultana — pâtisseries marocaines traditionnelles et de prestige. Découvrez nos gâteaux marocains authentiques, créations raffinées, cadeaux et commandes personnalisées à Gatineau, Québec.">
+<meta name="keywords" content="pâtisserie marocaine, gâteaux marocains, pâtisseries marocaines traditionnelles, gâteaux marocains prestige, Maison Sultana, Sultana Lhaja Malika, corne de gazelle, kaab el ghazal, ghriba, fekkas, Gatineau, Québec">
+<meta name="author" content="Maison Sultana — Tradition Marocaine">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#9f767c">
+<link rel="canonical" href="https://sultana.ma/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:site_name" content="Maison Sultana">
+<meta property="og:title" content="Maison Sultana — Pâtisseries marocaines traditionnelles & prestige">
+<meta property="og:description" content="Découvrez Maison Sultana, spécialiste des pâtisseries marocaines traditionnelles et de prestige, à Gatineau, Québec.">
+<meta property="og:url" content="https://sultana.ma/">
+<meta property="og:image" content="https://sultana.ma/images/sultana-hero.png">
+<meta property="og:image:alt" content="Pâtisseries marocaines Maison Sultana">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Maison Sultana — Pâtisseries marocaines traditionnelles & prestige">
+<meta name="twitter:description" content="Pâtisseries marocaines traditionnelles, authentiques et raffinées.">
+<meta name="twitter:image" content="https://sultana.ma/images/sultana-hero.png">
+
+<link rel="alternate" hreflang="fr" href="https://sultana.ma/">
+<link rel="alternate" hreflang="en" href="https://sultana.ma/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://sultana.ma/"> 
+
+<title>Maison Sultana | Pâtisseries marocaines traditionnelles & prestige</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+
+<style>
+:root{
+  --sultana-mauve:#9f767c;
+  --sultana-mauve-dark:#704f56;
+  --sultana-gold:#d9ad62;
+  --sultana-cream:#fbf7f3;
+}
+body{background:var(--sultana-cream);}
+.hero{
+  position:relative;
+  overflow:hidden;
+  min-height:calc(100vh - 100px);
+  background:
+    radial-gradient(circle at 15% 20%,rgba(255,255,255,.20) 0 2px,transparent 3px),
+    radial-gradient(circle at 80% 70%,rgba(217,173,98,.16) 0 2px,transparent 3px),
+    linear-gradient(135deg,#8f686f 0%,#b58b91 45%,#8b626b 100%);
+}
+.hero:before{
+  content:"";
+  position:absolute;inset:0;pointer-events:none;opacity:.52;
+  background:
+    repeating-linear-gradient(105deg,transparent 0 24px,rgba(255,255,255,.07) 25px,transparent 27px 49px),
+    repeating-linear-gradient(75deg,transparent 0 31px,rgba(80,45,52,.06) 32px,transparent 34px 63px);
+  mix-blend-mode:soft-light;
+}
+.hero:after{
+  content:"✦  ❧  ✧  ❧  ✦";
+  position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:center;
+  padding-top:35px;color:rgba(255,255,255,.16);font-size:30px;letter-spacing:26px;
+  pointer-events:none;
+}
+.hero-inner{position:relative;z-index:2;}
+.hero .hero-inner>div:first-child{color:#fff;}
+.hero .hero-inner h1,.hero .hero-inner h2,.hero .hero-inner p{color:#fff;text-shadow:0 2px 18px rgba(45,20,25,.18);}
+.hero .eyebrow{color:#f7dfb0;}
+.hero-photo{position:relative;}
+.hero-photo:before{
+  content:"";
+  position:absolute;inset:-18px;border:1px solid rgba(217,173,98,.65);
+  border-radius:50% 48% 52% 46%;transform:rotate(-4deg);pointer-events:none;
+}
+.hero-photo img{
+  position:relative;z-index:1;
+  width:min(330px,72vw)!important;height:auto!important;
+  object-fit:contain;
+  filter:drop-shadow(0 24px 35px rgba(42,18,24,.30));
+}
+.hero .seal{z-index:3;}
+.hero-content{text-align:center;}
+.hero-content .eyebrow{margin-top:4px;}
+.sultana-hero-logo{
+  display:block!important;width:220px!important;height:auto!important;margin:0 auto 22px!important;
+  object-fit:contain!important;filter:drop-shadow(0 8px 20px rgba(45,20,25,.24));
+}
+.video-gallery{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:34px;
+}
+.video-card{
+  position:relative;overflow:hidden;background:#fff;border:1px solid rgba(159,118,124,.22);
+  border-radius:18px;box-shadow:0 14px 40px rgba(80,45,52,.10);
+}
+.video-card video{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#20181a;}
+.video-card .video-caption{padding:15px 17px;color:var(--sultana-mauve-dark);font-family:Montserrat,sans-serif;font-size:.88rem;letter-spacing:.04em;}
+.moroccan-line{
+  width:180px;height:2px;margin:18px auto 0;
+  background:linear-gradient(90deg,transparent,var(--sultana-gold),transparent);
+  position:relative;
+}
+.moroccan-line:after{content:"◆";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--sultana-cream);padding:0 8px;color:var(--sultana-gold);font-size:9px;}
+@media(max-width:900px){.video-gallery{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){
+  .video-gallery{grid-template-columns:1fr;}
+  .sultana-hero-logo{width:180px!important;}
+  .hero{min-height:auto;padding-bottom:70px;}
+}
+</style>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "@id": "https://sultana.ma/#organization",
+  "name": "Maison Sultana",
+  "alternateName": "Sultana — Tradition Marocaine",
+  "description": "Maison Sultana est spécialisée dans les pâtisseries marocaines traditionnelles et de prestige.",
+  "url": "https://sultana.ma/",
+  "logo": "https://sultana.ma/images/sultana-logo.png",
+  "image": "https://sultana.ma/images/sultana-hero.png",
+  "telephone": "+18196357927",
+  "email": "contact@sultana.ma",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "745 chemin Aylmer, local 101B",
+    "addressLocality": "Gatineau",
+    "addressRegion": "Québec",
+    "addressCountry": "CA"
+  },
+  "sameAs": [
+    "https://www.instagram.com/",
+    "https://www.facebook.com/"
+  ],
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Gatineau"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Québec"
+    }
+  ]
+}
+</script>
+<link rel="manifest" href="site.webmanifest">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Bakery",
+      "@id":"https://sultana.ma/#business",
+      "name":"Maison Sultana",
+      "alternateName":"Sultana Lhaja Malika",
+      "url":"https://sultana.ma/",
+      "logo":"https://sultana.ma/images/sultana-logo.png",
+      "image":["https://sultana.ma/images/sultana-hero.png","https://sultana.ma/images/moroccan-desserts.jpg"],
+      "description":"Producteur et distributeur de gâteaux marocains traditionnels et de prestige. Maison Sultana propose des pâtisseries marocaines authentiques, raffinées et des commandes personnalisées à Gatineau, Québec.",
+      "telephone":"+18196357927",
+      "email":"contact@sultana.ma",
+      "priceRange":"$$",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"745 chemin Aylmer, local 101B",
+        "addressLocality":"Gatineau",
+        "addressRegion":"Québec",
+        "addressCountry":"CA"
+      },
+      "areaServed":["Gatineau","Québec","Canada"],
+      "knowsAbout":["gâteaux marocains","pâtisseries marocaines","corne de gazelle","Kaab El Ghazal","Ghriba","Fekkas","gâteaux marocains de prestige","distribution de pâtisseries marocaines"]
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://sultana.ma/#website",
+      "url":"https://sultana.ma/",
+      "name":"Maison Sultana",
+      "publisher":{"@id":"https://sultana.ma/#business"},
+      "inLanguage":"fr-CA"
+    }
+  ]
+}
+</script>
+<link rel="manifest" href="site.webmanifest">
 </head>
 <body>
 <div class="topbar" data-i18n="top">PÂTISSERIES MAROCAINES • TRADITIONNELLES & AUTHENTIQUES • FAITES AVEC AMOUR</div>
 <nav class="nav"><div class="container nav-inner">
-<a class="brand" href="index.html"><img src="images/sultana-logo.png" alt="Sultana"><div class="brand-title">Sultana<small>TRADITION MAROCAINE</small></div></a>
+<a class="brand" href="index.html"><img src="images/sultana-logo.png" alt="Logo Maison Sultana"><div class="brand-title">Sultana<small>TRADITION MAROCAINE</small></div></a>
 <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
 <div class="menu">
 <a href="index.html" data-i18n="navHome">Accueil</a><a href="#sultana" data-i18n="navAbout">Sultana</a>
 <a href="produit.html" data-i18n="navProducts">Notre Produit</a><a href="#galerie" data-i18n="navGallery">Galerie</a><a href="#contact" data-i18n="navContact">Contact</a>
 </div>
-<div class="lang" aria-label="Language"><button data-lang="fr" aria-label="Français">🇫🇷 <span>FR</span></button><button data-lang="en" aria-label="English">🇬🇧 <span>EN</span></button></div>
+<div class="lang" aria-label="Choisir la langue">
+<button class="lang-btn" data-lang="fr" aria-label="Français" title="Français">🇫🇷 <span>FR</span></button>
+<button class="lang-btn" data-lang="en" aria-label="English" title="English">🇬🇧 <span>EN</span></button>
+</div>
 <a class="cta" href="#contact" data-i18n="navOrder">Commander</a>
 </div></nav>
 
 <header class="hero" id="accueil"><div class="container hero-inner">
-<div><div class="eyebrow" data-i18n="eyebrow">L’élégance du savoir-faire marocain</div>
+<div class="hero-content"><img class="sultana-hero-logo" src="images/sultana-logo.png" alt="Logo Maison Sultana — Tradition Marocaine">
+<div class="eyebrow" data-i18n="eyebrow">L’élégance du savoir-faire marocain</div>
 <h1>Sultana<span class="script">Tradition</span></h1><h2 data-i18n="heroTitle">PÂTISSERIES MAROCAINES</h2><div class="ornament">◆</div>
-<p data-i18n="heroText">Des saveurs d’antan, une touche d’élégance. Découvrez l’univers Sultana et ses pâtisseries marocaines traditionnelles, authentiques et raffinées.</p>
+<p data-i18n="heroText">Maison Sultana est producteur et distributeur de gâteaux marocains traditionnels et de prestige. Découvrez des pâtisseries marocaines authentiques et raffinées à Gatineau, Québec, pour cadeaux, fêtes, événements et commandes personnalisées.</p>
 <div class="actions"><a class="btn btn-primary" href="produit.html" data-i18n="discover">Découvrir</a><a class="btn btn-secondary" href="#contact" data-i18n="order">Commander maintenant</a></div></div>
-<div class="hero-photo"><img src="images/sultana-hero.png" alt="Pâtisseries marocaines Sultana"><div class="seal">AUTHENTIQUE<br><span style="color:#d9ad62">MAROC</span><br>♥</div></div>
+<div class="hero-photo"><img src="images/sultana-hero.png" alt="Pâtisseries marocaines traditionnelles Maison Sultana"><div class="seal">AUTHENTIQUE<br><span style="color:#d9ad62">MAROC</span><br>♥</div></div>
 </div></header>
 
 <section class="section about" id="sultana"><div class="container">
 <div class="section-head"><div class="eyebrow" data-i18n="house">Notre maison</div><h2 data-i18n="spirit">L’esprit Sultana</h2><p data-i18n="houseText">Une identité inspirée du patrimoine marocain, entre générosité, finesse et art de recevoir.</p></div>
-<div class="about-grid"><div class="about-img"><img src="images/moroccan-desserts.jpg" alt="Desserts marocains"></div>
+<div class="about-grid"><div class="about-img"><img src="images/moroccan-desserts.jpg" alt="Gâteaux et pâtisseries marocaines traditionnelles Maison Sultana"></div>
 <div class="about-copy"><h3 data-i18n="taste">Le goût du Maroc dans votre cuisine</h3><p data-i18n="about1">Sultana célèbre les recettes transmises de génération en génération.</p><p data-i18n="about2">Notre ambition : faire voyager vos sens et partager une pâtisserie marocaine élégante, généreuse et authentique.</p><a class="btn btn-primary" href="#contact" data-i18n="talk">Parler à Sultana</a></div></div>
 </div></section>
 
@@ -50,8 +231,21 @@
 <div class="teaser-grid"><div class="teaser"><h3 data-i18n="t1">Tradition</h3><p data-i18n="t1p">Des recettes marocaines emblématiques et généreuses.</p></div><div class="teaser"><h3 data-i18n="t2">Élégance</h3><p data-i18n="t2p">Une présentation raffinée pour vos moments précieux.</p></div><div class="teaser"><h3 data-i18n="t3">Authenticité</h3><p data-i18n="t3p">Le goût et les parfums du patrimoine marocain.</p></div></div>
 <div class="center"><a class="btn btn-primary" href="produit.html" data-i18n="viewProducts">Voir Notre Produit</a></div></div></section>
 
-<section class="section" id="galerie"><div class="container"><div class="section-head"><div class="eyebrow" data-i18n="galleryEyebrow">Savoir-faire & gourmandise</div><h2 data-i18n="galleryTitle">Galerie Sultana</h2></div>
-<div class="gallery"><img src="images/sultana-hero.png" alt="Sultana"><img src="images/moroccan-desserts.jpg" alt="Pâtisserie"><img src="images/sultana-hero.png" alt="Desserts"><img src="images/moroccan-desserts.jpg" alt="Assortiment"><img src="images/sultana-hero.png" alt="Créations"></div></div></section>
+<section class="section" id="galerie"><div class="container"><div class="section-head">
+ <div class="eyebrow" data-i18n="galleryEyebrow">Savoir-faire & gourmandise</div>
+ <h2 data-i18n="galleryTitle">Galerie Sultana</h2>
+ <p>Découvrez nos créations en vidéo, présentées dans un écrin inspiré de la soie mauve marocaine.</p>
+ <div class="moroccan-line"></div>
+ </div>
+ <div class="video-gallery">
+   <div class="video-card"><video controls preload="metadata" autoplay muted loop playsinline><source src="video/video1.mp4" type="video/mp4">Votre navigateur ne supporte pas la vidéo.</video><div class="video-caption">Présentation Sultana · Vidéo 01</div></div>
+   <div class="video-card"><video controls preload="metadata" autoplay muted loop playsinline><source src="video/video2.mp4" type="video/mp4">Votre navigateur ne supporte pas la vidéo.</video><div class="video-caption">Présentation Sultana · Vidéo 02</div></div>
+   <div class="video-card"><video controls preload="metadata" autoplay muted loop playsinline><source src="video/video3.mp4" type="video/mp4">Votre navigateur ne supporte pas la vidéo.</video><div class="video-caption">Présentation Sultana · Vidéo 03</div></div>
+   <div class="video-card"><video controls preload="metadata" autoplay muted loop playsinline><source src="video/video4.mp4" type="video/mp4">Votre navigateur ne supporte pas la vidéo.</video><div class="video-caption">Présentation Sultana · Vidéo 04</div></div>
+   <div class="video-card"><video controls preload="metadata" autoplay muted loop playsinline><source src="video/video5.mp4" type="video/mp4">Votre navigateur ne supporte pas la vidéo.</video><div class="video-caption">Présentation Sultana · Vidéo 05</div></div>
+   <div class="video-card"><video controls preload="metadata" autoplay muted loop playsinline><source src="video/video6.mp4" type="video/mp4">Votre navigateur ne supporte pas la vidéo.</video><div class="video-caption">Présentation Sultana · Vidéo 06</div></div>
+ </div>
+ </div></section>
 
 <section class="banner"><div class="container banner-inner"><div><h2 data-i18n="bannerTitle">Le goût du Maroc, avec une touche de douceur !</h2><p data-i18n="bannerText">Des recettes simples, authentiques et généreuses.</p></div><a class="btn" href="#contact" data-i18n="order">Commander maintenant</a></div></section>
 
@@ -67,9 +261,15 @@
 
 <footer><div class="container">
 <div class="footer-grid">
-<div class="footer-brand"><img src="images/sultana-logo.png" alt="Sultana"><div><h3>Sultana</h3><p data-i18n="footerDesc">Tradition Marocaine • Pâtisseries traditionnelles & authentiques.</p></div></div>
+<div class="footer-brand"><img src="images/sultana-logo.png" alt="Logo Maison Sultana"><div><h3>Sultana</h3><p data-i18n="footerDesc">Tradition Marocaine • Pâtisseries traditionnelles & authentiques.</p></div></div>
 <div><h3 data-i18n="footerNav">Navigation</h3><div class="footer-links"><a href="index.html" data-i18n="navHome">Accueil</a><a href="produit.html" data-i18n="navProducts">Notre Produit</a><a href="index.html#galerie" data-i18n="navGallery">Galerie</a><a href="index.html#contact" data-i18n="navContact">Contact</a></div></div>
-<div><h3 data-i18n="footerContact">Contact</h3><p>(819) 635-7927<br>Gatineau · Québec · Canada</p><div class="footer-actions"><a class="footer-map" href="https://www.google.com/maps/search/?api=1&query=745+chemin+Aylmer+local+101B+Gatineau+Quebec+Canada" target="_blank" rel="noopener" data-i18n="footerMapLink">Voir sur Google Maps</a><div class="socials" aria-label="Social media"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></a><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3.1 0-5 1.9-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1Z"></path></svg></a><a class="social-wa" href="https://wa.me/18196357927" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.5-8.3ZM12.1 21.6h-.1c-1.7 0-3.4-.5-4.8-1.4l-.3-.2-3.8 1 1-3.7-.2-.4a9.7 9.7 0 0 1-1.5-5.1c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.9 9.8Zm5.4-7.3c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.6-3.2-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1-1.1 2.4s1.1 2.8 1.2 3c.2.2 2.2 3.4 5.4 4.8.8.4 1.4.6 1.8.7.8.3 1.5.2 2 .1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3Z"></path></svg></a></div></div></div>
+<div><h3 data-i18n="footerContact">Contact</h3><p>(819) 635-7927<br>Gatineau · Québec · Canada</p><div class="footer-actions">
+<div class="map-container" style="width:100%;max-width:520px;margin:12px 0 18px;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.12);">
+<iframe
+src="https://www.google.com/maps?q=745+chemin+Aylmer+local+101B+Gatineau+Quebec+Canada&output=embed"
+width="100%" height="280" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Maison Sultana sur Google Maps"></iframe>
+</div>
+<a class="footer-map" href="https://www.google.com/maps/search/?api=1&query=745+chemin+Aylmer+local+101B+Gatineau+Quebec+Canada" target="_blank" rel="noopener" data-i18n="footerMapLink">Ouvrir dans Google Maps</a><div class="socials" aria-label="Social media"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></a><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3.1 0-5 1.9-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1Z"></path></svg></a><a class="social-wa" href="https://wa.me/18196357927" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.5-8.3ZM12.1 21.6h-.1c-1.7 0-3.4-.5-4.8-1.4l-.3-.2-3.8 1 1-3.7-.2-.4a9.7 9.7 0 0 1-1.5-5.1c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.9 9.8Zm5.4-7.3c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.6-3.2-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1-1.1 2.4s1.1 2.8 1.2 3c.2.2 2.2 3.4 5.4 4.8.8.4 1.4.6 1.8.7.8.3 1.5.2 2 .1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3Z"></path></svg></a></div></div></div>
 </div>
 <div class="copy">© <span data-year></span> Sultana — Tradition Marocaine.</div></div></footer>
 <a class="floating-whatsapp" href="https://wa.me/18196357927" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.5-8.3ZM12.1 21.6h-.1c-1.7 0-3.4-.5-4.8-1.4l-.3-.2-3.8 1 1-3.7-.2-.4a9.7 9.7 0 0 1-1.5-5.1c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.9 9.8Zm5.4-7.3c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.6-3.2-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1-1.1 2.4s1.1 2.8 1.2 3c.2.2 2.2 3.4 5.4 4.8.8.4 1.4.6 1.8.7.8.3 1.5.2 2 .1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3Z"></path></svg></a>

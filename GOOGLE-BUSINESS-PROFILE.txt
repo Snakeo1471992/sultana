@@ -1,0 +1,23 @@
+MAISON SULTANA — DONNÉES GOOGLE BUSINESS PROFILE
+
+Nom réel à utiliser : Maison Sultana
+
+Description (à coller dans Google Business Profile) :
+Maison Sultana est producteur et distributeur de gâteaux marocains traditionnels et de prestige. Nous proposons des pâtisseries marocaines authentiques et raffinées, notamment cornes de gazelle (Kaab El Ghazal), Ghriba et Fekkas. Nos créations sont adaptées aux cadeaux, fêtes, événements et commandes personnalisées. Située à Gatineau, Québec, Maison Sultana met en avant le savoir-faire et la tradition marocaine.
+
+Adresse : 745 chemin Aylmer, local 101B, Gatineau, Québec, Canada
+Téléphone : (819) 635-7927
+Email : contact@sultana.ma
+Site : https://sultana.ma/
+
+Catégorie : sélectionner dans Google la catégorie la plus précise réellement proposée et correspondant à l’activité principale (ne pas ajouter des catégories uniquement comme mots-clés).
+
+IMPORTANT : le nom du profil doit rester le nom réel « Maison Sultana » et les mots-clés « producteur », « distributeur », « gâteaux marocains », etc. doivent être placés dans la description, les services et le contenu du site, pas ajoutés artificiellement au nom.
+
+Après mise en ligne :
+1. Vérifier la fiche Google Business Profile.
+2. Vérifier le site dans Google Search Console.
+3. Envoyer https://sultana.ma/sitemap.xml dans Search Console.
+4. Utiliser l’inspection d’URL pour demander une exploration de la page d’accueil et de produit.html.
+5. Ajouter de vraies photos de produits, logo, façade/local et créations.
+6. Garder le même nom, adresse et téléphone sur le site et les profils publics.

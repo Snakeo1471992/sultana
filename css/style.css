@@ -24,7 +24,14 @@ img{display:block;max-width:100%}
 .lang button{border:1px solid var(--rose);background:transparent;color:var(--mauve);border-radius:18px;padding:6px 9px;font-size:10px;font-weight:700;cursor:pointer}
 .lang button.active,.lang button:hover{background:var(--mauve);color:white}
 .cta{background:var(--mauve);color:#fff;padding:12px 18px;border-radius:25px;font-size:10px;font-weight:700;text-transform:uppercase}
-.hero{min-height:740px;overflow:hidden;background:linear-gradient(115deg,#f7dfe8,#fff8fa 52%,#ead7e3)}
+.hero{min-height:740px;overflow:hidden;position:relative;background-image:linear-gradient(rgba(24,10,22,.48),rgba(24,10,22,.62)),url("../images/hero-background.png");background-size:cover;background-position:center;background-repeat:no-repeat}
+.hero-inner{position:relative;z-index:2}
+.hero-content{position:relative;z-index:3}
+.hero h1{color:#fff;text-shadow:0 3px 18px rgba(0,0,0,.35)}
+.hero h2{color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+.hero p{color:rgba(255,255,255,.92);text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.hero .eyebrow{color:#f1d08a}
+.hero .script{color:#e4bd6b}
 .hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;padding:72px 0}
 .eyebrow{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:700}
 .hero h1{font:500 clamp(72px,9vw,125px)/.72 "Cormorant Garamond",serif;color:var(--mauve);margin:22px 0 10px}
@@ -144,4 +151,137 @@ footer p,footer a{font-size:11px;line-height:1.9;color:#cdb8c2}
   .menu-toggle{width:42px;height:42px;padding:0;font-size:23px}
   .lang button{min-width:34px;height:32px;padding:4px 6px}
   .lang button span{font-size:9px}
+}
+
+
+/* Instagram / Reels-style video gallery */
+.video-gallery{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
+  align-items:start;
+}
+.video-card{
+  background:#fff;
+  border:1px solid #ecd9e2;
+  border-radius:20px;
+  padding:10px;
+  overflow:hidden;
+  box-shadow:0 18px 45px rgba(102,45,78,.12);
+}
+.video-card video{
+  display:block;
+  width:100%;
+  aspect-ratio:9 / 16;
+  height:auto;
+  object-fit:cover;
+  border-radius:14px;
+  background:#2e1825;
+  margin:0;
+}
+.video-caption{
+  padding:11px 6px 5px;
+  text-align:center;
+  color:var(--mauve);
+  font-family:"Cormorant Garamond",serif;
+  font-size:18px;
+}
+@media(max-width:900px){
+  .video-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+}
+@media(max-width:560px){
+  .video-gallery{grid-template-columns:1fr;gap:14px}
+  .video-card{max-width:390px;margin:auto}
+}
+
+/* Instagram / Reels portrait video gallery */
+.video-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}
+.video-card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,.10);aspect-ratio:9/16}
+.video-card video{width:100%;height:100%;display:block;object-fit:cover;background:#1b1718}
+@media(max-width:900px){.video-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.video-gallery{grid-template-columns:1fr;max-width:390px;margin:auto}}
+.map-container iframe{max-width:100%}
+.lang{display:flex;align-items:center;gap:6px}
+.lang-btn{border:0;background:transparent;cursor:pointer;font:inherit;display:inline-flex;align-items:center;gap:4px}
+
+/* FINAL HERO BACKGROUND OVERRIDE */
+header.hero{
+  background-image:linear-gradient(rgba(20,8,18,.42),rgba(20,8,18,.58)),url("../images/hero-background.png") !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+
+/* FINAL CLEAN LOOK — remove decorative contours and show full Reels frame on mobile */
+.hero-photo:before{
+  display:none !important;
+  border:0 !important;
+  content:none !important;
+}
+.video-gallery .video-card{
+  border:0 !important;
+  padding:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  background:transparent !important;
+  overflow:hidden !important;
+}
+.video-gallery .video-card video{
+  width:100% !important;
+  height:100% !important;
+  aspect-ratio:9 / 16 !important;
+  object-fit:cover !important;
+  border:0 !important;
+  border-radius:0 !important;
+  margin:0 !important;
+}
+/* On phones, preserve the entire 9:16 Instagram/Reels frame instead of cropping it. */
+@media (max-width:600px){
+  .video-gallery{
+    width:100% !important;
+    max-width:100% !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    gap:18px !important;
+  }
+  .video-card{
+    width:100% !important;
+    max-width:none !important;
+    margin:0 !important;
+    aspect-ratio:9 / 16 !important;
+    background:#111 !important;
+  }
+  .video-card video{
+    width:100% !important;
+    height:100% !important;
+    aspect-ratio:9 / 16 !important;
+    object-fit:contain !important;
+    background:#111 !important;
+  }
+  .video-caption{
+    display:none !important;
+  }
+}
+
+
+/* SULTANA HERO — NO CONTOUR */
+.sultana-hero,
+.sultana-hero img,
+.hero img[src*="sultana-hero"],
+img[src*="sultana-hero.png"],
+.hero-photo,
+.hero-photo::before,
+.hero-photo::after,
+.sultana-hero::before,
+.sultana-hero::after{
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.sultana-hero::before,
+.sultana-hero::after,
+.hero-photo::before,
+.hero-photo::after{
+  content: none !important;
+  display: none !important;
 }

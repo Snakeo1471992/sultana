@@ -1,0 +1,9 @@
+{
+  "name": "Maison Sultana — Tradition Marocaine",
+  "short_name": "Sultana",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf7f3",
+  "theme_color": "#9f767c",
+  "lang": "fr"
+}
