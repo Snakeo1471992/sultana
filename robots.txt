@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sultana.ma/sitemap.xml
+Sitemap: https://lamaisonsultana.ma/sitemap.xml
